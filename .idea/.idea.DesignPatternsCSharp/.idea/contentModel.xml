@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Web Analyst - FM\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_DesignPatternsCSharp.1157210616.00" t="ExcludeRecursive" />
+    <e p="D:\Data\www\public\c#\samples-personal\DesignPatternsCSharp" t="IncludeFlat">
+      <e p="ConsoleApplication1" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CalculadorDeImpostos.cs" t="Include" />
+        <e p="CalcularDeDescontos.cs" t="Include" />
+        <e p="ConsoleApplication1.csproj" t="IncludeRecursive" />
+        <e p="Desconto.cs" t="Include" />
+        <e p="DescontoPorMaisDeQuinhetosReais.cs" t="Include" />
+        <e p="DescontosPorCincoItens.cs" t="Include" />
+        <e p="ICMS.cs" t="Include" />
+        <e p="ICPP.cs" t="Include" />
+        <e p="IKCV.cs" t="Include" />
+        <e p="Imposto.cs" t="Include" />
+        <e p="ISS.cs" t="Include" />
+        <e p="Item.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Orcamento.cs" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SemDesconto.cs" t="Include" />
+        <e p="TemplateDeImpostoCondicional.cs" t="Include" />
+      </e>
+      <e p="DesignPatternsCSharp.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
