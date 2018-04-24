@@ -16,39 +16,49 @@ namespace ConsoleApplication1
             var icpp = new ICPP();
 
             var orcamento = new Orcamento(500);
-
+//
             var calculadorDeImpostos = new CalculadorDeImpostos();
-            calculadorDeImpostos.RealizaCalculo(orcamento, icms);
-            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
-     
-        
+//            calculadorDeImpostos.RealizaCalculo(orcamento, icms);
+//            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
+//     
+//        
+//            
+//            
+//            Console.WriteLine("######## Finalizando Impostos ########...\n\n" );
+//
+//            Console.WriteLine("######## Executando Descontos  - Design Patterns Chains of Responsability ########...");
+//
+//            var calcularDeDescontos = new CalcularDeDescontos();
+//            var index = 0;
+//            do
+//            {
+//                index++;
+//                orcamento.AdicionaItem(new Item($"Item { index }", 100 * index));
+//                
+//            } while (orcamento.Itens.Count < 6);
+//
+//            
+//            Console.WriteLine($"Desconto Calculado:{ calcularDeDescontos.Calcula(orcamento) }");
+//            Console.WriteLine("######## Finalizando Descontos ########...");
+//            
+////            
+//            Console.WriteLine("######## Executando Impostos  - Design Patterns Template Method ########...");
+//            Console.WriteLine("Imposto ICPP Calculado:");
+//            calculadorDeImpostos.RealizaCalculo(orcamento, icpp);
+//            Console.WriteLine("Imposto IKCV Calculado:");
+//            calculadorDeImpostos.RealizaCalculo(orcamento, ikcv);
+//            
+//            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Template Method ########...");
             
             
-            Console.WriteLine("######## Finalizando Impostos ########...\n\n" );
-
-            Console.WriteLine("######## Executando Descontos  - Design Patterns Chains of Responsability ########...");
-
-            var calcularDeDescontos = new CalcularDeDescontos();
-            var index = 0;
-            do
-            {
-                index++;
-                orcamento.AdicionaItem(new Item($"Item { index }", 100 * index));
-                
-            } while (orcamento.Itens.Count < 6);
-
             
-            Console.WriteLine($"Desconto Calculado:{ calcularDeDescontos.Calcula(orcamento) }");
-            Console.WriteLine("######## Finalizando Descontos ########...");
-            
-            
-            Console.WriteLine("######## Executando Impostos  - Design Patterns Template Method ########...");
+            Console.WriteLine("######## Executando Impostos  - Design Patterns Decorator Method ########...");
             Console.WriteLine("Imposto ICPP Calculado:");
             calculadorDeImpostos.RealizaCalculo(orcamento, icpp);
             Console.WriteLine("Imposto IKCV Calculado:");
             calculadorDeImpostos.RealizaCalculo(orcamento, ikcv);
             
-            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Template Method ########...");
+            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Decorator Method ########...");
         }
     }
 }

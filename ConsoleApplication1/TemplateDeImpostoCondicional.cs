@@ -1,4 +1,4 @@
-﻿namespace ConsoleApplication1
+﻿ namespace ConsoleApplication1
 {
     public abstract class TemplateDeImpostoCondicional : Imposto
     {
