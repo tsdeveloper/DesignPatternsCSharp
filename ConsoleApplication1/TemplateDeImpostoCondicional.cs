@@ -2,7 +2,14 @@
 {
     public abstract class TemplateDeImpostoCondicional : Imposto
     {
-        public double Calcula(Orcamento orcamento)
+        public TemplateDeImpostoCondicional() : base(){}
+        
+        protected TemplateDeImpostoCondicional(Imposto outroImposto) : base(outroImposto)
+        {
+        }
+
+       
+        public override double Calcula(Orcamento orcamento)
         {
             if (DeveUsarMaximaTaxacao(orcamento))
                 return MaximaTaxacao(orcamento);
@@ -15,5 +22,6 @@
         protected abstract double MaximaTaxacao(Orcamento orcamento);
 
         public abstract bool DeveUsarMaximaTaxacao(Orcamento orcamento);
+
     }
 }

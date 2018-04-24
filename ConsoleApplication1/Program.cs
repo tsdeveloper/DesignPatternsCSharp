@@ -50,13 +50,19 @@ namespace ConsoleApplication1
 //            
 //            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Template Method ########...");
             
-            
+//            Console.WriteLine("######## Executando Impostos  - Design Patterns Decorator Method ########...");
+//            Console.WriteLine("Imposto ISS com ICMS Calculado:");
+//            iss = new ISS();
+//            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
+//          
+//            
+//            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Decorator Method ########...");
             
             Console.WriteLine("######## Executando Impostos  - Design Patterns Decorator Method ########...");
-            Console.WriteLine("Imposto ICPP Calculado:");
-            calculadorDeImpostos.RealizaCalculo(orcamento, icpp);
-            Console.WriteLine("Imposto IKCV Calculado:");
-            calculadorDeImpostos.RealizaCalculo(orcamento, ikcv);
+            Console.WriteLine("Imposto ISS com ICMS Calculado:");
+            iss = new ISS();
+            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
+          
             
             Console.WriteLine("######## Finalizando Impostos  - Design Patterns Decorator Method ########...");
         }

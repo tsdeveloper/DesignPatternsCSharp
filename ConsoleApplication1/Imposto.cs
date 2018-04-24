@@ -1,7 +1,27 @@
 ﻿namespace ConsoleApplication1
 {
-    public interface Imposto
+    public abstract class Imposto
     {
-        double Calcula(Orcamento orcamento);
+        public Imposto OutroImposto { get; set; }
+
+        public Imposto()
+        {
+            OutroImposto = null;
+        }
+        
+        protected Imposto(Imposto outroImposto)
+        {
+            OutroImposto = outroImposto;
+        }
+        
+       public abstract double Calcula(Orcamento orcamento);
+        
+        protected double CalculoDoOutroImposto(Orcamento orcamento)
+        {
+            if (OutroImposto == null)
+                return 0;
+            
+            return OutroImposto.Calcula(orcamento);
+        }
     }
 }

@@ -4,8 +4,11 @@ namespace ConsoleApplication1
 {
     public class IKCV : TemplateDeImpostoCondicional
     {
+        public IKCV() : base(){}
        
-
+        public IKCV(Imposto outroImposto) : base(outroImposto)
+        {
+        }
         protected override double MinimaTaxacao(Orcamento orcamento)
         {
             return orcamento.Valor * 0.06;
