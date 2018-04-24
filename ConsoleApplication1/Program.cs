@@ -8,16 +8,16 @@ namespace ConsoleApplication1
         {
             
             
-            Console.WriteLine("######## Executando Impostos  - Design Patterns Strategy ########...");
+//            Console.WriteLine("######## Executando Impostos  - Design Patterns Strategy ########...");
             
-            var iss = new ISS();
-            var icms = new ICMS();
-            var ikcv = new IKCV();
-            var icpp = new ICPP();
+//            var iss = new ISS();
+//            var icms = new ICMS();
+//            var ikcv = new IKCV();
+//            var icpp = new ICPP();
 
-            var orcamento = new Orcamento(500);
+//            var orcamento = new Orcamento(500);
 //
-            var calculadorDeImpostos = new CalculadorDeImpostos();
+//            var calculadorDeImpostos = new CalculadorDeImpostos();
 //            calculadorDeImpostos.RealizaCalculo(orcamento, icms);
 //            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
 //     
@@ -58,13 +58,13 @@ namespace ConsoleApplication1
 //            
 //            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Decorator Method ########...");
             
-            Console.WriteLine("######## Executando Impostos  - Design Patterns Decorator Method ########...");
-            Console.WriteLine("Imposto ISS com ICMS Calculado:");
-            iss = new ISS();
-            calculadorDeImpostos.RealizaCalculo(orcamento, iss);
-          
+            Console.WriteLine("######## Executando Impostos  - Design Patterns State Method ########...");
+            var reforma = new Orcamento(500);
             
-            Console.WriteLine("######## Finalizando Impostos  - Design Patterns Decorator Method ########...");
+            Console.WriteLine("Aplicando desconto de acordo ao Estado do Orçamento");
+            reforma.AplicaDescontoExtra();
+
+            Console.WriteLine("######## Finalizando Impostos  - Design Patterns State Method ########...");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
 
 namespace ConsoleApplication1
 {
@@ -8,7 +9,10 @@ namespace ConsoleApplication1
         
         public double Valor { get; private set; }
         public IList<Item> Itens { get; private set; }
+        public Status Status { get; set; }
+        public int EstadoAtual { get; set; }
         
+            
         public Orcamento(double valor)
         {
             Valor = valor;
@@ -20,8 +24,20 @@ namespace ConsoleApplication1
             Itens.Add(item);
         }
 
-       
 
+        public void AplicaDescontoExtra()
+        {
+            throw new System.NotImplementedException();
+        }
+    }
+
+    public enum Status
+    {
+        EM_APROVACAO =1,
+        APROVADO =2,
+        REPROVADO =3,
+        FINALIZADO =4,
+        
     }
     
             

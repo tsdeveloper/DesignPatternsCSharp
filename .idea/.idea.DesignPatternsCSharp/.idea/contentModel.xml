@@ -11,6 +11,8 @@
         <e p="Desconto.cs" t="Include" />
         <e p="DescontoPorMaisDeQuinhetosReais.cs" t="Include" />
         <e p="DescontosPorCincoItens.cs" t="Include" />
+        <e p="EmAprovacao.cs" t="Include" />
+        <e p="EstadoDeUmOrcamento.cs" t="Include" />
         <e p="ICMS.cs" t="Include" />
         <e p="ICPP.cs" t="Include" />
         <e p="IKCV.cs" t="Include" />

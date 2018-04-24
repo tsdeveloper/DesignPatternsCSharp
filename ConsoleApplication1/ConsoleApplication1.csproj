@@ -43,6 +43,8 @@
     <Compile Include="Desconto.cs" />
     <Compile Include="DescontoPorMaisDeQuinhetosReais.cs" />
     <Compile Include="DescontosPorCincoItens.cs" />
+    <Compile Include="EmAprovacao.cs" />
+    <Compile Include="EstadoDeUmOrcamento.cs" />
     <Compile Include="ICMS.cs" />
     <Compile Include="ICPP.cs" />
     <Compile Include="IKCV.cs" />
