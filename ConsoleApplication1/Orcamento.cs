@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Security.Permissions;
 
@@ -7,16 +8,16 @@ namespace ConsoleApplication1
     public class Orcamento
     {
         
-        public double Valor { get; private set; }
+        public double Valor { get;  set; }
         public IList<Item> Itens { get; private set; }
-        public Status Status { get; set; }
-        public int EstadoAtual { get; set; }
+       public EstadoDeUmOrcamento EstadoAtual { get; set; }
         
             
         public Orcamento(double valor)
         {
             Valor = valor;
             Itens = new List<Item>();
+            EstadoAtual = new EmAprovacao();
         }
 
         public void AdicionaItem(Item item)
@@ -27,18 +28,26 @@ namespace ConsoleApplication1
 
         public void AplicaDescontoExtra()
         {
-            throw new System.NotImplementedException();
+            EstadoAtual.AplicaDescontoExtra(this);
+        }
+
+        public void Aprova()
+        {
+            EstadoAtual.Aprova(this);
+        }
+        
+        public void Reprova()
+        {
+            EstadoAtual.Reprova(this);
+        }
+        
+        public void Finaliza()
+        {
+            EstadoAtual.Finaliza(this);
         }
     }
 
-    public enum Status
-    {
-        EM_APROVACAO =1,
-        APROVADO =2,
-        REPROVADO =3,
-        FINALIZADO =4,
-        
-    }
+   
     
             
 }

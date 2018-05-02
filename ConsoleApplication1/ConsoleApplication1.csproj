@@ -38,22 +38,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aprovado.cs" />
     <Compile Include="CalculadorDeImpostos.cs" />
     <Compile Include="CalcularDeDescontos.cs" />
+    <Compile Include="CriadorDeNotaFiscal.cs" />
     <Compile Include="Desconto.cs" />
     <Compile Include="DescontoPorMaisDeQuinhetosReais.cs" />
     <Compile Include="DescontosPorCincoItens.cs" />
     <Compile Include="EmAprovacao.cs" />
     <Compile Include="EstadoDeUmOrcamento.cs" />
+    <Compile Include="Finalizado.cs" />
     <Compile Include="ICMS.cs" />
     <Compile Include="ICPP.cs" />
     <Compile Include="IKCV.cs" />
     <Compile Include="Imposto.cs" />
     <Compile Include="ISS.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ItemDaNota.cs" />
+    <Compile Include="NotaFiscal.cs" />
     <Compile Include="Orcamento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reprovado.cs" />
     <Compile Include="SemDesconto.cs" />
     <Compile Include="TemplateDeImpostoCondicional.cs" />
   </ItemGroup>

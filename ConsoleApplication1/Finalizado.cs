@@ -2,26 +2,26 @@
 
 namespace ConsoleApplication1
 {
-    public class EmAprovacao : EstadoDeUmOrcamento
+    public class Finalizado: EstadoDeUmOrcamento
     {
         public void AplicaDescontoExtra(Orcamento orcamento)
         {
-           orcamento.Valor = orcamento.Valor - (orcamento.Valor * 0.05);
+            throw new Exception("Orçamentos finalizados não recebem desconto extra");
         }
 
         public void Aprova(Orcamento orcamento)
         {
-            orcamento.EstadoAtual = new Aprovado();
+            throw new Exception("Orçamento já está finalizado!");
         }
 
         public void Reprova(Orcamento orcamento)
         {
-            orcamento.EstadoAtual = new Reprovado();;
+            throw new Exception("Orçamento já está finalizado!");
         }
 
         public void Finaliza(Orcamento orcamento)
         {
-           throw  new Exception("Orçamento em aprovação não pode ir para finalizado!");
+            throw new Exception("Orçamento já está finalizado!");
         }
     }
-} 
+}
